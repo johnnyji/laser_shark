@@ -9,9 +9,9 @@ services:
 # http://devcenter.wercker.com/articles/services/
 build:
     steps:
-        # Uncomment this to force RVM to use a specific Ruby version
-        # - rvm-use:
-        #       version: 2.1.0
+        # Force RVM to use a specific Ruby version
+        - rvm-use:
+            version: 2.1.1
 
         # A step that executes `bundle install` command
         - bundle-install
